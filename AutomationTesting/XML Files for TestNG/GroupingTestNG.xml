@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Grouping">
+	
+	<test name = "Run Mobile">
+				<groups>
+					<run>
+						<include name = "apple"></include>
+						<include name = "moto"></include>
+					</run>
+				</groups>
+	
+				<classes> 
+				<class name="testNG.GroupingExample"></class>
+				</classes>
+	</test>
+	
+</suite>

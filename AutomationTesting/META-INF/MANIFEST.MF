@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: AutomationTesting
+Bundle-SymbolicName: AutomationTesting
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: AutomationTesting
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
