@@ -67,7 +67,13 @@ public class createNewAccount {
 	// create a new instance of ChromeDriver
 	WebDriver driver = new ChromeDriver();
 	// navigate to Amazon website
-	driver.get("https://www.amazon.in/?&ext_vrnc=hi&tag=googhydrabk1-21&ref=pd_sl_g50zekzm1_e&adgrpid=74238127911&hvpone=&hvptwo=&hvadid=610644609009&hvpos=&hvnetw=g&hvrand=17429149962795757676&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9298676&hvtargid=kwd-29089120&hydadcr=5496_2359482&gclid=CjwKCAiA2rOeBhAsEiwA2Pl7QwCoO37Or23cJ6DlNjPYd3arBieIotPQ_lHUjH4mf8jyxm_nlC_XIBoCxocQAvD_BwE");
+	driver.get("https://www.amazon.in/?&ext_vrnc=hi&"
+			+ "tag=googhydrabk1-21&ref=pd_sl_g50zekzm1_e&adgrpid="
+			+ "74238127911&hvpone=&hvptwo=&hvadid=610644609009&hvpos=&hvnetw"
+			+ "=g&hvrand=17429149962795757676&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint"
+			+ "=&hvlocphy=9298676&hvtargid=kwd-29089120&hydadcr=5496_2359482&gclid="
+			+ "CjwKCAiA2rOeBhAsEiwA2Pl7QwCoO37Or23cJ6DlNjPYd3arBieIotPQ_lHUjH4mf8jyxm_nlC_"
+			+ "XIBoCxocQAvD_BwE");
 	
 	 WebElement searchbar = driver.findElement(By.className("nav-line-1-container"));
 	 searchbar.click();
@@ -89,7 +95,7 @@ public class createNewAccount {
 	 driver.quit();
 	 
 	 
-	 // pushing after changes by ajay
+	 // pushing after changes
 	 
 	
 	
