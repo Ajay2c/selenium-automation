@@ -2,89 +2,89 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-21T20:28:57 IST" name="Default suite" finished-at="2023-02-21T20:29:27 IST" duration-ms="30203">
+  <suite started-at="2023-03-02T12:08:11 IST" name="Default suite" finished-at="2023-03-02T12:08:38 IST" duration-ms="27177">
     <groups>
     </groups>
-    <test started-at="2023-02-21T20:28:57 IST" name="Default test" finished-at="2023-02-21T20:29:27 IST" duration-ms="30203">
+    <test started-at="2023-03-02T12:08:11 IST" name="Default test" finished-at="2023-03-02T12:08:38 IST" duration-ms="27177">
       <class name="amazonScripts.addToCart">
-        <test-method signature="searchBar(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:amazonScripts.addToCart@49dc7102]" started-at="2023-02-21T20:28:57 IST" name="searchBar" data-provider="creationDetails" finished-at="2023-02-21T20:29:05 IST" duration-ms="7890" status="PASS">
+        <test-method signature="searchBar(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:amazonScripts.addToCart@49dc7102]" started-at="2023-03-02T12:08:11 IST" name="searchBar" data-provider="creationDetails" finished-at="2023-03-02T12:08:19 IST" duration-ms="7944" status="PASS">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[Platform.1]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[AjayC]]>
               </value>
             </param>
-            <param index="2">
+            <param index="1">
               <value>
                 <![CDATA[8800734356]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchBar -->
-        <test-method signature="searchBar(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:amazonScripts.addToCart@49dc7102]" started-at="2023-02-21T20:29:05 IST" name="searchBar" data-provider="creationDetails" finished-at="2023-02-21T20:29:12 IST" duration-ms="6980" status="PASS">
-          <params>
-            <param index="0">
+            <param index="2">
               <value>
                 <![CDATA[Platform.1]]>
               </value>
             </param>
-            <param index="1">
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBar -->
+        <test-method signature="searchBar(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:amazonScripts.addToCart@49dc7102]" started-at="2023-03-02T12:08:19 IST" name="searchBar" data-provider="creationDetails" finished-at="2023-03-02T12:08:25 IST" duration-ms="6354" status="PASS">
+          <params>
+            <param index="0">
               <value>
                 <![CDATA[VickyA]]>
               </value>
             </param>
-            <param index="2">
+            <param index="1">
               <value>
                 <![CDATA[8800734354]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchBar -->
-        <test-method signature="searchBar(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:amazonScripts.addToCart@49dc7102]" started-at="2023-02-21T20:29:12 IST" name="searchBar" data-provider="creationDetails" finished-at="2023-02-21T20:29:19 IST" duration-ms="7041" status="PASS">
-          <params>
-            <param index="0">
+            <param index="2">
               <value>
                 <![CDATA[Platform.1]]>
               </value>
             </param>
-            <param index="1">
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBar -->
+        <test-method signature="searchBar(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:amazonScripts.addToCart@49dc7102]" started-at="2023-03-02T12:08:25 IST" name="searchBar" data-provider="creationDetails" finished-at="2023-03-02T12:08:32 IST" duration-ms="6354" status="PASS">
+          <params>
+            <param index="0">
               <value>
                 <![CDATA[AdamK]]>
               </value>
             </param>
-            <param index="2">
+            <param index="1">
               <value>
                 <![CDATA[8800734355]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Platform.1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBar -->
-        <test-method signature="searchBar(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:amazonScripts.addToCart@49dc7102]" started-at="2023-02-21T20:29:19 IST" name="searchBar" data-provider="creationDetails" finished-at="2023-02-21T20:29:27 IST" duration-ms="8126" status="PASS">
+        <test-method signature="searchBar(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:amazonScripts.addToCart@49dc7102]" started-at="2023-03-02T12:08:32 IST" name="searchBar" data-provider="creationDetails" finished-at="2023-03-02T12:08:38 IST" duration-ms="6363" status="PASS">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[Platform.1]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[AkashL]]>
               </value>
             </param>
-            <param index="2">
+            <param index="1">
               <value>
                 <![CDATA[8800734359]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Platform.1]]>
               </value>
             </param>
           </params>
