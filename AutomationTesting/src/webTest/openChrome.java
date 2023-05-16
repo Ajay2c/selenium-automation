@@ -11,7 +11,7 @@ public class openChrome {
 		// TODO Auto-generated method stub
 		
 		System.setProperty("webdriver.chrome.driver", 
-				"C:\\Users\\AjayChandru\\Desktop\\SeliniumTest\\chrome-driver\\chromedriver.exe");
+				"C:\\Users\\AjayC\\Desktop\\GIT\\selenium-automation\\AutomationTesting\\driver\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		

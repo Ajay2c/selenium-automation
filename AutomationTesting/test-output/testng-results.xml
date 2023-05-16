@@ -1,97 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="9" failed="1" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-02T12:08:11 IST" name="Default suite" finished-at="2023-03-02T12:08:38 IST" duration-ms="27177">
+  <suite started-at="2023-03-09T12:45:40 IST" name="Default suite" finished-at="2023-03-09T12:45:58 IST" duration-ms="17584">
     <groups>
     </groups>
-    <test started-at="2023-03-02T12:08:11 IST" name="Default test" finished-at="2023-03-02T12:08:38 IST" duration-ms="27177">
-      <class name="amazonScripts.addToCart">
-        <test-method signature="searchBar(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:amazonScripts.addToCart@49dc7102]" started-at="2023-03-02T12:08:11 IST" name="searchBar" data-provider="creationDetails" finished-at="2023-03-02T12:08:19 IST" duration-ms="7944" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[AjayC]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[8800734356]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Platform.1]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-03-09T12:45:40 IST" name="Default test" finished-at="2023-03-09T12:45:58 IST" duration-ms="17584">
+      <class name="Onboarding.FunderOnboarding">
+        <test-method signature="openChrome()[pri:0, instance:Onboarding.FunderOnboarding@3df978b9]" started-at="2023-03-09T12:45:40 IST" name="openChrome" finished-at="2023-03-09T12:45:42 IST" duration-ms="1857" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchBar -->
-        <test-method signature="searchBar(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:amazonScripts.addToCart@49dc7102]" started-at="2023-03-02T12:08:19 IST" name="searchBar" data-provider="creationDetails" finished-at="2023-03-02T12:08:25 IST" duration-ms="6354" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[VickyA]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[8800734354]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Platform.1]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- openChrome -->
+        <test-method signature="loginUser()[pri:1, instance:Onboarding.FunderOnboarding@3df978b9]" started-at="2023-03-09T12:45:42 IST" name="loginUser" finished-at="2023-03-09T12:45:51 IST" duration-ms="8529" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchBar -->
-        <test-method signature="searchBar(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:amazonScripts.addToCart@49dc7102]" started-at="2023-03-02T12:08:25 IST" name="searchBar" data-provider="creationDetails" finished-at="2023-03-02T12:08:32 IST" duration-ms="6354" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[AdamK]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[8800734355]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Platform.1]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- loginUser -->
+        <test-method signature="clickTransaction()[pri:2, instance:Onboarding.FunderOnboarding@3df978b9]" started-at="2023-03-09T12:45:51 IST" name="clickTransaction" finished-at="2023-03-09T12:45:51 IST" duration-ms="88" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchBar -->
-        <test-method signature="searchBar(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:amazonScripts.addToCart@49dc7102]" started-at="2023-03-02T12:08:32 IST" name="searchBar" data-provider="creationDetails" finished-at="2023-03-02T12:08:38 IST" duration-ms="6363" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[AkashL]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[8800734359]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Platform.1]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- clickTransaction -->
+        <test-method signature="clickFunder()[pri:3, instance:Onboarding.FunderOnboarding@3df978b9]" started-at="2023-03-09T12:45:51 IST" name="clickFunder" finished-at="2023-03-09T12:45:56 IST" duration-ms="5250" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchBar -->
-      </class> <!-- amazonScripts.addToCart -->
+        </test-method> <!-- clickFunder -->
+        <test-method signature="createFunder()[pri:4, instance:Onboarding.FunderOnboarding@3df978b9]" started-at="2023-03-09T12:45:56 IST" name="createFunder" finished-at="2023-03-09T12:45:56 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createFunder -->
+        <test-method signature="enterFunderName()[pri:0, instance:Onboarding.FunderOnboarding@3df978b9]" started-at="2023-03-09T12:45:56 IST" name="enterFunderName" finished-at="2023-03-09T12:45:56 IST" depends-on-methods="Onboarding.FunderOnboarding.createFunder" duration-ms="369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterFunderName -->
+        <test-method signature="enterCompanyRegNumber()[pri:0, instance:Onboarding.FunderOnboarding@3df978b9]" started-at="2023-03-09T12:45:56 IST" name="enterCompanyRegNumber" finished-at="2023-03-09T12:45:57 IST" depends-on-methods="Onboarding.FunderOnboarding.enterFunderName" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterCompanyRegNumber -->
+        <test-method signature="enterTaxRegNumber()[pri:0, instance:Onboarding.FunderOnboarding@3df978b9]" started-at="2023-03-09T12:45:57 IST" name="enterTaxRegNumber" finished-at="2023-03-09T12:45:57 IST" depends-on-methods="Onboarding.FunderOnboarding.enterCompanyRegNumber" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterTaxRegNumber -->
+        <test-method signature="enterEmailAddress()[pri:0, instance:Onboarding.FunderOnboarding@3df978b9]" started-at="2023-03-09T12:45:57 IST" name="enterEmailAddress" finished-at="2023-03-09T12:45:58 IST" depends-on-methods="Onboarding.FunderOnboarding.enterTaxRegNumber" duration-ms="824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterEmailAddress -->
+        <test-method signature="enterPhoneNumber()[pri:0, instance:Onboarding.FunderOnboarding@3df978b9]" started-at="2023-03-09T12:45:58 IST" name="enterPhoneNumber" finished-at="2023-03-09T12:45:58 IST" depends-on-methods="Onboarding.FunderOnboarding.enterEmailAddress" duration-ms="2" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: unknown
+at org.openqa.selenium.By$ByClassName.<init>(By.java:310)
+at org.openqa.selenium.By.className(By.java:100)
+at Onboarding.FunderOnboarding.enterPhoneNumber(FunderOnboarding.java:119)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterPhoneNumber -->
+        <test-method signature="enterIncorporatedDate()[pri:0, instance:Onboarding.FunderOnboarding@3df978b9]" started-at="2023-03-09T12:45:58 IST" name="enterIncorporatedDate" finished-at="2023-03-09T12:45:58 IST" depends-on-methods="Onboarding.FunderOnboarding.enterPhoneNumber" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method FunderOnboarding.enterIncorporatedDate()[pri:0, instance:Onboarding.FunderOnboarding@3df978b9] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method FunderOnboarding.enterIncorporatedDate()[pri:0, instance:Onboarding.FunderOnboarding@3df978b9] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterIncorporatedDate -->
+        <test-method signature="enterTradingCommencedDate()[pri:0, instance:Onboarding.FunderOnboarding@3df978b9]" started-at="2023-03-09T12:45:58 IST" name="enterTradingCommencedDate" finished-at="2023-03-09T12:45:58 IST" depends-on-methods="Onboarding.FunderOnboarding.enterIncorporatedDate" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method FunderOnboarding.enterTradingCommencedDate()[pri:0, instance:Onboarding.FunderOnboarding@3df978b9] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method FunderOnboarding.enterTradingCommencedDate()[pri:0, instance:Onboarding.FunderOnboarding@3df978b9] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterTradingCommencedDate -->
+        <test-method signature="enterURL()[pri:0, instance:Onboarding.FunderOnboarding@3df978b9]" started-at="2023-03-09T12:45:58 IST" name="enterURL" finished-at="2023-03-09T12:45:58 IST" depends-on-methods="Onboarding.FunderOnboarding.enterTradingCommencedDate" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method FunderOnboarding.enterURL()[pri:0, instance:Onboarding.FunderOnboarding@3df978b9] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method FunderOnboarding.enterURL()[pri:0, instance:Onboarding.FunderOnboarding@3df978b9] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterURL -->
+      </class> <!-- Onboarding.FunderOnboarding -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

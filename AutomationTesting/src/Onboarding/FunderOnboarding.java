@@ -29,7 +29,7 @@ public class FunderOnboarding {
 	public void loginUser() throws InterruptedException {
 
 		WebElement userEmail = driver.findElement(By.id("auth_login_email"));
-		userEmail.sendKeys("staging2.nfm+OA1@gmail.com");
+		userEmail.sendKeys("staging2.raise.testing+OA1@gmail.com");
 
 		WebElement userPassword = driver.findElement(By.id("auth_login_password"));
 		userPassword.sendKeys("Platform.1");
@@ -116,7 +116,7 @@ public class FunderOnboarding {
 	@Test(dependsOnMethods = "enterEmailAddress")
 	public void enterPhoneNumber() {
 		WebElement PhoneNumber = driver.findElement(
-				By.xpath("/html/body/div[5]/div/div/form/div/div/div/div[6]/div[2]/div/div/input"));
+				By.className("form-control "));
 		PhoneNumber.sendKeys("9988998898");
 	}
 	

@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="amazonScripts.addToCart">
+      <class name="Onboarding.FunderOnboarding">
         <methods>
-          <include name="searchBar"/>
+          <include name="enterFunderName"/>
+          <include name="enterCompanyRegNumber"/>
+          <include name="enterURL"/>
+          <include name="createFunder"/>
+          <include name="enterEmailAddress"/>
+          <include name="enterIncorporatedDate"/>
+          <include name="enterTradingCommencedDate"/>
+          <include name="enterTaxRegNumber"/>
+          <include name="enterPhoneNumber"/>
         </methods>
-      </class> <!-- amazonScripts.addToCart -->
+      </class> <!-- Onboarding.FunderOnboarding -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
