@@ -33,7 +33,7 @@ public class addPIM {
 		WebElement login = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"));
 		login.click();
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		
 		
@@ -68,6 +68,25 @@ public class addPIM {
 		paste.keyRelease(KeyEvent.VK_CONTROL);
 		paste.keyPress(KeyEvent.VK_ENTER);
 		paste.keyRelease(KeyEvent.VK_ENTER);
+		
+		
+		WebElement firstName = driver.findElement(By.name("firstName"));
+		firstName.sendKeys("Ajay");
+		
+		WebElement lastName = driver.findElement(By.name("lastName"));
+		lastName.sendKeys("C");
+
+		// check the create login details 
+		
+		WebElement createButton = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[2]/div/label/span"));
+		
+		boolean status1 = createButton.isEnabled();
+		boolean status2 = createButton.isSelected();
+		
+		System.out.print(status1);
+		System.out.print(status2);
+		
+		createButton.click();
 		
 		
 		
