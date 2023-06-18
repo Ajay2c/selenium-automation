@@ -1,6 +1,7 @@
 package OrangeHRM;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,6 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class addAdmin {
+	@SuppressWarnings("deprecation")
 	public static void main(String arg[]) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\AjayC\\Desktop\\GIT\\selenium-automation\\AutomationTesting\\driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
