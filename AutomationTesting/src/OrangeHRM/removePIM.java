@@ -1,5 +1,7 @@
 package OrangeHRM;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,7 +19,7 @@ public class removePIM {
 
 		Thread.sleep(3000);
 		
-		WebElement email = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input"));
+		WebElement email = driver.findElement(By.name("username"));
 		email.sendKeys("Admin");
 		
 		WebElement password = driver.findElement(By.name("password"));
@@ -50,9 +52,16 @@ public class removePIM {
 		
 		String table_xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div[1]/div[2]/div[3]/div[1]/div[2]/div";
 		
+		Thread.sleep(2000);
 		// Search 
 		WebElement Search = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[2]/button[2]"));
 		Search.click();
+		
+		
+		Thread.sleep(4000);
+		List<WebElement> list_name = driver.findElements(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div/div/div[3]"));
+		
+		System.out.print(list_name);
 		
 		
 		

@@ -117,7 +117,7 @@ public class addPIM {
 		WebElement SubmitButton = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/button[2]"));
 		SubmitButton.click();
 		
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		
 		// getting the final action status 
 		WebElement status = driver.findElement(By.id("oxd-toaster_1"));
