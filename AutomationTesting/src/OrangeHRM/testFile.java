@@ -1,88 +1,78 @@
 package OrangeHRM;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 
 public class testFile {
 
-	public static void main(String[] args)throws InterruptedException  {
-		// TODO Auto-generated method stub
+    public static void main(String[] args) throws InterruptedException {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\AjayC\\Desktop\\GIT\\selenium-automation\\AutomationTesting\\driver\\chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://demo.opencart.com/admin/");
 
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\AjayC\\Desktop\\GIT\\selenium-automation\\AutomationTesting\\driver\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
-		// Scenario- To login to a page
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		
-		Thread.sleep(2000);
-		
-		WebElement email = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input"));
-		email.sendKeys("Admin");
-		
-		WebElement password = driver.findElement(By.name("password"));
-		password.sendKeys("admin123");
-		
-		WebElement login = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"));
-		login.click();
-		
-		// sleep for 3 seconds (implicit & explicit wait)
-		Thread.sleep(3000);
-		
-		/*
-		// Scenario- To compare actual and expected
-		
-		WebElement actualmsg = driver.findElement(By.xpath("//div[@id='forgotPasswordLink']/a"));
-		String actual=actualmsg.getText();
-		System.out.println("Actual message:"+actual);
-		
-		String expected="Forgot your password?";
-		
-		if(actual.equals(expected))
-		{
-			System.out.println("Pass");
-		}
-		else {
-			System.out.println("Fail");
-		}
-		*/
-		
-		/*
-		// Scenario-Actions- To perform various actions on elements
-		WebElement perf = driver.findElement(By.xpath("//a[@id='menu__Performance']/b"));
-		
-		Actions act=new Actions(driver);
-		act.moveToElement(perf).click().perform();
-		
-		WebElement empTrack = driver.findElement(By.xpath("//a[@id='menu_performance_viewEmployeePerformanceTrackerList']"));
-		Actions act1=new Actions(driver);
-		act1.moveToElement(empTrack).click().perform();
-		*/
-		
-		
-		// Scenario-Select- Selecting from a drop down menu
-		WebElement admin = driver.findElement(By.linkText("Admin"));
-		admin.click();
-		
-		
-		
-		
-		System.out.println("Clicked on Admin menu ");
-	    Thread.sleep(5000);
+        Thread.sleep(3000);
+        WebElement username = driver.findElement(By.id("input-username"));
+        username.sendKeys("demo");
 
-	    //job title selection
-	    Actions action = new Actions (driver);
-	    WebElement sAdminMenuJob = driver.findElement(By.xpath("//span[normalize-space()='Job']"));
-	    action.moveToElement(sAdminMenuJob).build().perform();
-	    Thread.sleep(5000);
+        WebElement password = driver.findElement(By.id("input-password"));
+        password.sendKeys("demo");
 
-	    WebElement sAdminMenuJobTitle = driver.findElement(By.xpath("(//a[normalize-space()='Job Titles'])[1]"));
-	    action.moveToElement(sAdminMenuJobTitle).click().build().perform();
-	    Thread.sleep(5000);
-	    
-		driver.close();
-	}
+        WebElement login = driver.findElement(By.xpath("//*[@id=\"form-login\"]/div[3]/button"));
+        login.click();
 
+        Thread.sleep(3000);
+
+        WebElement closeAlert = driver.findElement(By.xpath("//*[@id=\"modal-security\"]/div/div/div[1]/button"));
+        closeAlert.click();
+
+        Thread.sleep(3000);
+
+        WebElement catalogLink = driver.findElement(By.linkText("Catalog"));
+        catalogLink.click();
+
+        WebElement categoriesLink = driver.findElement(By.linkText("Categories"));
+        categoriesLink.click();
+
+        List<WebElement> tableRows = driver.findElements(By.tagName("tr"));
+        int totalRows = tableRows.size();
+        System.out.println("Total number of rows: " + totalRows);
+
+        List<WebElement> tableData = driver.findElements(By.tagName("td"));
+        int totalData = tableData.size();
+        System.out.println("Total number of data: " + totalData);
+
+        WebElement checkCamera = driver.findElement(By.xpath("//td[normalize-space()='Cameras']//preceding-sibling::td"));
+        boolean isCameraSelected = checkCamera.isSelected();
+        if (isCameraSelected) {
+            System.out.println("The checkbox is already selected");
+        } else {
+            checkCamera.click();
+        }
+
+        List<WebElement> stringNumbers = driver.findElements(By.xpath("//*[@id=\"form-category\"]/div[1]/table/tbody/tr//td[3]"));
+
+        List<Integer> integerNumbers = new ArrayList<Integer>();
+        for (WebElement loopNumber : stringNumbers) {
+            String individualNumber = loopNumber.getText();
+            integerNumbers.add(Integer.parseInt(individualNumber));
+        }
+        System.out.println(integerNumbers);
+
+        int smallestValue = Collections.min(integerNumbers);
+
+        List<WebElement> selectSmallestValueChecks = driver.findElements(By.xpath("//td[normalize-space()='" + smallestValue + "']//preceding-sibling::td[2]"));
+        for (WebElement selectSmallestValueCheck : selectSmallestValueChecks) {
+            boolean isSmallestValueSelected = selectSmallestValueCheck.isSelected();
+            if (!isSmallestValueSelected) {
+                selectSmallestValueCheck.click();
+            }
+        }
+    }
 }
